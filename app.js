@@ -22,7 +22,7 @@ app.route("/")
                     });
                     res.redirect("/");
                 } else {
-                    res.render("list", { title: "Today", newItem: foundItems })
+                    res.render("index", { title: "Today", newItem: foundItems })
                 }
             }
         })
@@ -65,7 +65,7 @@ app.route("/:customTitle")
                     res.redirect(`/${customTitle}`)
                 } else {
                     
-                    res.render("list", { title: foundList.name, newItem: foundList.items })
+                    res.render("index", { title: foundList.name, newItem: foundList.items })
                 }
             }
         })
