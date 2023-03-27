@@ -95,5 +95,5 @@ app.route("/delete")
         }
     });
 app.listen(3000, () => {
-    console.log("server is up and ready in port 3000");
+    console.log("server is up and ready in port http://localhost:3000");
 });
